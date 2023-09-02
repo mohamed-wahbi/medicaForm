@@ -77,6 +77,12 @@
     cursor: pointer;
 }
 
+.error {
+    color: red;
+    font-family: system-ui;
+    width: 95%;
+}
+
 @media screen and (max-width:800px){
     .formContent .form {
         width: 90% ;

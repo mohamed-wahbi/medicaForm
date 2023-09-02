@@ -108,7 +108,7 @@
     align-items: center;
 }
 
-.controle .updete {
+.controle .update {
     padding: 2px 6px;
     color: #409340;
     border: none;
@@ -126,4 +126,11 @@
     cursor: pointer;
     font-weight: 700;
 
+}
+
+
+@media screen and (max-width:"768px") {
+    .tabelInfo table th {
+        color: red;
+    }
 }
