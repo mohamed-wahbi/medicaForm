@@ -17,6 +17,7 @@ if(!isset($_SESSION['USER_PASS'])){
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <script src="convTabToExl.js"></script>
 </head>
 <body>
     <section class="infoTable">
@@ -26,13 +27,13 @@ if(!isset($_SESSION['USER_PASS'])){
         <div class="tabelContent">
             <h1>Admin interface :</h1>
             <div class="downTab">
-                <button>Download Tabel <span><i class="fa-solid fa-download"></i></span></button>
+                <button id="telechargerTab">Download Tabel <span><i class="fa-solid fa-download"></i></span></button>
             </div>
             <div class="TabelTitel">
                 <h2>Microbiome-DATA :</h2>
             </div>
             <div class="tabelInfo">
-                <table border="2px" style="border: 2px solid black;">
+                <table border="2px" style="border: 2px solid black;" id="tabData">
                     <tr>
                         <th>PMID</th>
                         <th>DOL</th>
@@ -99,8 +100,16 @@ if(!isset($_SESSION['USER_PASS'])){
         </div>
     </section>
 
- 
 
+<script>
+alert('wahbi');
+var telechargerTab=document.querySelector('#telechargerTab');
+telechargerTab.addEventListener('click',()=>{
+    var table2excel = new Table2Excel();
+    table2excel.export(document.querySelectorAll("#tabData"));
+})
+
+</script>
 </body>
 
 </html>
