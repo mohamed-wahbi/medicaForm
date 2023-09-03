@@ -27,7 +27,8 @@
 
 .tabelContent h1 {
     text-align: center;
-    color: white;
+    color: #6e8d80;
+    padding-top: 15px;
 }
 
 .logout {
