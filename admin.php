@@ -102,7 +102,6 @@ if(!isset($_SESSION['USER_PASS'])){
 
 
 <script>
-alert('wahbi');
 var telechargerTab=document.querySelector('#telechargerTab');
 telechargerTab.addEventListener('click',()=>{
     var table2excel = new Table2Excel();
