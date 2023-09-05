@@ -38,6 +38,11 @@
     padding-bottom: 15px;
 }
 
+.logout a {
+    text-decoration: none;
+    font-size: 19px;
+}
+
 .logout button {
     border: none;
     padding: 5px;
@@ -49,8 +54,9 @@
     background: #cef2eb;
     font-weight: bold;
     cursor: pointer;
-
 }
+
+
 
 .downTab {
     width: 99%;
